@@ -2,7 +2,7 @@
 $(window).load(function(){
 	var baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet';
 	var searchTerm = 'batman'; // change this to the word/s you want to search for
-	var apiKey = "AIzaSyAoo1wqAKaLeQDZlUHzwsB6W3qT9y8yzP8"; // put your google api key here
+	var apiKey = "AIzaSyAoo1wqAKaLeQDZlUHzwsB6W3qT9y8yzP8"; 
 	var url = baseUrl + '&q=' + searchTerm + '&key=' + apiKey;
 
     $.get(url, function (response) {
@@ -14,12 +14,10 @@ $(window).load(function(){
     	for(var i = 0; i < response.items.length; i++){
     		var videoId = response.items[i].id.videoId;
     		var videoUrl = videoBaseUrl + videoId;
+            
     		// url to a still image representing the video
     		var thumbnailImg = response.items[i].snippet.thumbnails.medium.url;
 
-    		// create <a> and <img> with jQuery 
-    		//     -- see http://www.hongkiat.com/blog/jquery-insert-element-part1/ for more info
-    		
     		// create link tag, <a>
     		var link = $('<a href="' + videoUrl + '"></a>');
 
