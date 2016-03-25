@@ -1,0 +1,38 @@
+
+h1{font-family: 'Amatic SC', sans-serif;
+	font-size: 50px;
+	float:right;
+}
+
+body{
+	background-image: url("http://peachythemagazine.com/peachy/wp-content/uploads/2014/09/Boombox_21_1.jpg"); 
+}
+.box{
+	font-size: 40px;
+	font-family: 'Amatic SC', sans-serif;
+	border: 1px solid #333;
+	border-radius: 60%;
+	float:left;
+	width: 150px;
+	height: 150px;
+	margin: 70px;
+	text-align: center;
+	line-height: 150px;
+	box-shadow: -3px 4px #ccc;
+}
+.box:nth-child(even){
+	background-color: lightblue;
+}
+.box:nth-child(odd){
+	background-color: gray;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:400px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
