@@ -1,0 +1,18 @@
+body{
+	background-color: red;
+}
+
+h1{
+	font-size: 80px;
+	color:black;
+
+	font-family: sans-serif;
+	   outline-color: rgb(34,234,233);
+}
+
+
+
+img{
+	margin: 20px;
+
+}
