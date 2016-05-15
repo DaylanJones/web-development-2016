@@ -20,7 +20,7 @@ nav {
 }
 nav ul {	
 	padding: .5em 2rem;
-	padding-left:5em;
+	padding-left:4em;
 	font-family:sans-serif;
 }
 
@@ -56,7 +56,7 @@ footer{
 	bottom:0;
 	padding-left:50em;
 	background-color: #2C3E50;
-	width: 150%;
+	width: 52.8%;
 	font-family: 'Poiret One', cursive;
 	color: #ECF0F1;
 }
