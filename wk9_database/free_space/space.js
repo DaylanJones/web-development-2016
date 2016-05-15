@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 //set port
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5000);
 
 // set up handlebars view engine
 var handlebars = require('express-handlebars').create({ defaultLayout:'main' });
@@ -26,16 +26,6 @@ var Message = require('./models/message.js');
 
 // ------ routes -------- //
 
-/*app.get('/populate',function(req,res){
-	new Message({
-		username: 'robyn',
-		title: 'Hello',
-		body: 'Hello from the outside'
-	}).save(function(err){
-		if (err){ console.log(err); }
-		res.send('saved');
-	});
-});*/
 // show all the top-level (parent) messages
 app.get('/',function(req,res){
 	Message.find({}).sort({datetime:-1}).exec(function(err,msgs){
