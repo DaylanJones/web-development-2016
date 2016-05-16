@@ -1,8 +1,3 @@
-	var baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20';
-	var searchTerm = '90s cartoons'; // change this to the word/s you want to search for
-	var apiKey = "AIzaSyAoo1wqAKaLeQDZlUHzwsB6W3qT9y8yzP8"; 
-	var url = baseUrl + '&q=' + searchTerm + '&key=' + apiKey;
-
 // bring in Express
 var express = require('express');
 var app = express();
@@ -20,7 +15,6 @@ app.get("/",function(req,res){
 	var data = {
 		 pageTitle: "If you love the 90s your at the right place!",
 		 pageContent: "This site is design to take you back to the golden era of music, television and film."
-
 	};
 	// Render the template using this data
 	res.render("page", data);
@@ -32,8 +26,8 @@ app.get("/cartoons",function(req,res){
 		 pageTitle: "90's Cartoons",
 		 pageContent: "One of the best things about the 90s were the cartoons!",
 		 photo:'90scartoons.jpg'
+		 video: 
 	};
-	var videoBaseUrl = 'https://www.youtube.com/watch?v=';
 	// render the template
 	res.render("cartoons", data);
 });
