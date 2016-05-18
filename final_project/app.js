@@ -25,8 +25,7 @@ app.get("/cartoons",function(req,res){
 	var data = {
 		 pageTitle: "90's Cartoons",
 		 pageContent: "One of the best things about the 90s were the cartoons!",
-		 photo:'90scartoons.jpg'
-		 video: 
+		 photo:'90scartoons.jpg' 
 	};
 	// render the template
 	res.render("cartoons", data);
