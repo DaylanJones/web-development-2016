@@ -1,7 +1,7 @@
 // wait for page to load
 $(window).load(function(){
 	var baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3';
-	var searchTerm = '1990s'; // change this to the word/s you want to search for
+	var searchTerm = '90s TGIF'; // change this to the word/s you want to search for
 	var apiKey = "AIzaSyAoo1wqAKaLeQDZlUHzwsB6W3qT9y8yzP8"; 
 	var url = baseUrl + '&q=' + searchTerm + '&key=' + apiKey;
 

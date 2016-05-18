@@ -1,10 +1,12 @@
 html,body{
+	background-color: #ffd83d;
 	margin: 0;
+	font-family: sans-serif;
 	
 }
 
 header {
-	background-color: #6FCB9F;
+	background-color: #7cd762;
 	border-top: 1px solid #3498DB;
 }
 
@@ -12,11 +14,12 @@ header h1{
 	font-family: 'Indie Flower', cursive;
 	padding-left: 600px;
 	font-size: 100px;
-	color: #fb2e01;
+	color: #d94a88;
 	text-shadow: .07em .07em #2C3E50;
 }
+
 nav {
-	background-color: #666547;
+	background-color: #ffa066;
 }
 nav ul {	
 	padding: .5em 2rem;
@@ -27,8 +30,9 @@ nav ul {
 nav li{
 	display: inline;
 	padding:1;
-	padding-left:14em;
+	padding-left:12em;
 	text-transform: lowercase;
+	text-shadow: .02em .02em gre;
 }
 
 nav a{	 
@@ -42,14 +46,16 @@ nav a:hover{
 
 .content{
 	font-family: sans-serif;
-	padding-left: 40em;
+	position: center;
+	padding-left: 50px;
 	
 }
 
 h1,h2,h3,h4{
 	font-family: 'Indie Flower', cursive;
-	color: #E74C3C;
-	padding-left:8em;
+	color: #03aacc;
+	padding-left:9em;
+	font-size: 28px;
 }
 footer{
 	position:absolute;
@@ -63,7 +69,16 @@ footer{
 
 img{
 	position:absolute;
-	padding-left:-15em;
+	padding-left:-10em;
 	width: 40%;
+	height: 40%;
+}
+#container{
+	padding-left: 35em;
+	height: 40%;
+}
+
+audio{
+	position: relative;
 
 }
